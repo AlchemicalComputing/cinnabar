@@ -1,0 +1,33 @@
+[project]
+name = "cinnabar"
+dynamic = ["version"]
+requires-python = ">=3.13"
+dependencies = []
+authors = [
+  {name = "Alchemical Computing", email = "contact@alchemicalcomputing.com"},
+]
+description = "A toolkit for designing industrial control panels"
+readme = "README.md"
+license = {text = "Apache License 2.0"}
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Manufacturing",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)",
+]
+
+[project.urls]
+Documentation = "https://cinnabar.alchemicalcomputing.com"
+Repository = "https://github.com/AlchemicalComputing/cinnabar"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "cinnabar/__init__.py"
